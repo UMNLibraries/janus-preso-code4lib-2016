@@ -145,7 +145,6 @@
 				<section>
 					<h2>Configuring Passenger for node.js</h2>
           <p>Undocumented, but this works:</p>
-          <!--<pre><code class="hljs" data-trim>-->
 					<pre><code data-noescape>
       Alias /janus /path/to/janus/public
       &lt;Directory /path/to/janus/public&gt;
@@ -154,6 +153,15 @@
         PassengerBaseURI /janus
       &lt;/Directory&gt;
           </code></pre>
+				</section>
+
+				<section>
+          <h2>Asynchrony</h2>
+					<ul>
+            <li class="fragment">Running multiple async ops <em>sequentially</em> is problematic.</li>
+            <li class="fragment"><a href="https://www.youtube.com/watch?v=8aGhZQkoFbQ">What the heck is the event loop anyway?</a></li>
+            <li class="fragment"><a href="http://journal.stuffwithstuff.com/2015/02/01/what-color-is-your-function/">What Color is Your Function?</a></p>
+          </ul>
 				</section>
 
 				<!-- Example of nested vertical slides -->
