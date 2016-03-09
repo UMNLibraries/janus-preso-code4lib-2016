@@ -117,17 +117,24 @@
 
 				<section>
           <h2>Installing node.js<h2>
-          <h3>OS Package</h3>
+          <h3 class="fragment">OS Package</h3>
 					<ul>
             <li class="fragment">Will your sys-admins allow/support it?</li>
 						<li class="fragment">Even if they do, version could be very old.</li>
 					</ul>
-          <h3>Installer/Version Manager</h3>
+          <h3 class="fragment">Installer/Version Manager</h3>
 					<ul>
             <li class="fragment"><a href="https://github.com/riywo/ndenv">ndenv</a></li>
             <li class="fragment"><a href="https://github.com/creationix/nvm">nvm</a></li>
             <li class="fragment"><a href="https://github.com/tj/n">n</a> (Requires already-existing node.js)</li>
 					</ul>
+				</section>
+
+				<section>
+          <h2>node.js - Not a robust HTTP server.</h2>
+          <p class="fragment">Need a reverse proxy. Most common recommendation is <a href="http://nginx.org/">nginx</a>.</p>
+          <p class="fragment">Still need to keep node.js running: <a href="https://github.com/foreverjs/forever">forever</a> or <a href="http://supervisord.org/">Supervisor</a> or ...</p>
+          <p class="fragment">May seem daunting. And what about risk-averse orgs?</p>
 				</section>
 
 				<!-- Example of nested vertical slides -->
