@@ -137,6 +137,25 @@
           <p class="fragment">May seem daunting. And what about risk-averse orgs?</p>
 				</section>
 
+				<section>
+          <h2>Our Solution: Apache + Passenger</h2>
+          <p><a href="https://github.com/phusion/passenger/wiki/Phusion-Passenger:-Node.js-tutorial">Phusion Passenger: Node.js tutorial</a></p>
+				</section>
+
+				<section>
+					<h2>Configuring Passenger for node.js</h2>
+          <p>Undocumented, but this works:</p>
+					<pre><code class="hljs" data-trim data-noescape>
+      Alias /janus /path/to/janus/public
+      <Directory /path/to/janus/public>
+        PassengerNodejs /path/to/node
+        PassengerAppRoot /path/to/janus
+        PassengerBaseURI /janus
+      </Directory>
+          </pre>
+				</section>
+
+
 				<!-- Example of nested vertical slides -->
 				<section>
 					<section>
