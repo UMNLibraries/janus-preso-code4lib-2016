@@ -146,13 +146,13 @@
 					<h2>Configuring Passenger for node.js</h2>
           <p>Undocumented, but this works:</p>
           <!--<pre><code class="hljs" data-trim>-->
-					<pre><code>
+					<pre><code data-noescape>
       Alias /janus /path/to/janus/public
-      <Directory /path/to/janus/public>
+      &lt;Directory /path/to/janus/public&gt;
         PassengerNodejs /path/to/node
         PassengerAppRoot /path/to/janus
         PassengerBaseURI /janus
-      </Directory>
+      &lt;/Directory&gt;
           </code></pre>
 				</section>
 
