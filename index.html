@@ -160,7 +160,25 @@
 					<ul>
             <li class="fragment">Running multiple async ops <em>sequentially</em> is problematic.</li>
             <li class="fragment"><a href="https://www.youtube.com/watch?v=8aGhZQkoFbQ">What the heck is the event loop anyway?</a></li>
-            <li class="fragment"><a href="http://journal.stuffwithstuff.com/2015/02/01/what-color-is-your-function/">What Color is Your Function?</a></p>
+            <li class="fragment"><a href="http://journal.stuffwithstuff.com/2015/02/01/what-color-is-your-function/">What Color is Your Function?</a></li>
+          </ul>
+				</section>
+
+				<section>
+          <h2>Rapid Evolution of Approaches</h2>
+					<ul>
+            <li class="fragment"><a href="http://www.slideshare.net/domenicdenicola/callbacks-promises-and-coroutines-oh-my-the-evolution-of-asynchronicity-in-javascript">Callbacks, Promises, and Coroutines (oh my!): Asynchronous Programming Patterns in JavaScript</a></li>
+            <li class="fragment"><a href="https://medium.com/@rdsubhas/es6-from-callbacks-to-promises-to-generators-87f1c0cd8f2e#.7cznmtj2p">ES 5-6-7: From Callbacks to Promises to Generators to Async/await</a></li>
+            <li class="fragment"><a href="https://github.com/tc39/ecmascript-asyncawait">aysnc/await proposal for ES7</a>, building on generators and promises.</li>
+          </ul>
+				</section>
+
+				<section>
+          <h2>Coroutines</h2>
+					<ul>
+            <li class="fragment">"...computer program components that generalize subroutines for nonpreemptive multitasking, by allowing multiple entry points for suspending and resuming execution at certain locations." &mdash; <a href="https://en.wikipedia.org/wiki/Coroutine">Wikipedia</a></li>
+            <li class="fragment">Coroutines, like ES7's async/await, make asynchronous code look <em>synchronous</em>.</a></li>
+            <li class="fragment">Fundamentally different from previous approaches, which all use <a href="https://en.wikipedia.org/wiki/Continuation-passing_style">continuation-passing style</a>.</li>
           </ul>
 				</section>
 
